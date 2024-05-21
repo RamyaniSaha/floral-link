@@ -21,9 +21,11 @@ nav, .navbar{
     right: 0;
 }
 nav:hover{
-  background-color: white;
+  background: rgb(255,255,255);
+  background: linear-gradient(140deg, rgba(255,255,255,1) 30%, rgba(159,132,147,1) 100%) !important;
   width: 100%;
   height: 24vh;
+  transition: .5 ease-in-out;
 }
 .navbar-brand{
   width: 16%;
@@ -77,13 +79,14 @@ nav:hover .fa-bars{
  right: 0;
 }
 nav:hover .navbar-nav{
-  top: 38%;
+  top: 38% !important;
 }
 .nav-link{
   color: white;
 }
 nav:hover .nav-link{
   color: black;
+  cursor: pointer;
 }
 .navbar-nav1{
   position: absolute;
@@ -170,7 +173,41 @@ nav:hover .nav-link{
 nav:hover .nav-link1{
   top: 1em;
   color: black;
+  cursor: pointer;
 }
+.fixed{
+  position: fixed;
+  height: 24vh;
+  top: 0;
+  left: 0;
+  padding-top: 0;
+  z-index: 99999;
+  background: rgb(255,255,255);
+  background: linear-gradient(201deg, rgba(255,255,255,1) 30%, rgba(159,132,147,1) 100%);
+  transition: .5 ease-in-out;
+}
+
+.fixed .navbar-brand{
+  top: 20%;
+  background-image: url("../images/FI_copper_landscape_standard_205x.avif");
+}
+.fixed .nav-link1{
+  color: black;
+}
+.fixed .navbar-nav{
+  top: 38%;
+}
+.fixed .nav-link{
+  color: black;
+}
+.fixed .navbar-toggler{
+  top: 30%;
+  border-color: black;
+}
+.fixed .fa-bars{
+  color: black;
+}
+
 .banner{
     position: relative;
 }
@@ -510,16 +547,21 @@ nav:hover .nav-link1{
     letter-spacing: 2px;
     word-spacing: 4px;
   }
+  .img-text p{
+    font-family: "open-sans", sans-serif;
+  }
   .img-text h4{
     font-size: 24px;
     padding-top: 3%;
     letter-spacing: 4px;
+    font-family:  "lora", sans-serif;
   }
   
   .bttn{
     display: block;
     position: relative;
     text-decoration: none;
+    font-family: "lora", sans-serif;
     color: white;
     letter-spacing: 2px !important;
     background: transparent;
@@ -641,11 +683,12 @@ nav:hover .nav-link1{
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 14px;
+    font-family: "open-sans", sans-serif;
   }
   .middle-text h4{
     color: white;
     font-size: 23px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:  "lora", sans-serif;
     padding-top: 2%;
     letter-spacing: 4px;
   }
@@ -653,6 +696,7 @@ nav:hover .nav-link1{
     display: block;
     position: relative;
     text-decoration: none;
+    font-family: "lora", sans-serif;
     color: white;
     letter-spacing: 2px !important;
     background: transparent;
@@ -742,7 +786,7 @@ nav:hover .nav-link1{
   .flo-txt{
     text-align: center;
     font-size: 14.4px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans", sans-serif;
     letter-spacing: 2px;
   }
   .flo-txt1{
@@ -751,7 +795,7 @@ nav:hover .nav-link1{
     text-align: center;
     font-size: 22px;
     font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora", sans-serif;
     letter-spacing: 3px;
   }
   .flo-txt2{
@@ -760,13 +804,13 @@ nav:hover .nav-link1{
     text-align: center;
     font-size: 13.5px;
     font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans", sans-serif;
     letter-spacing: 1px;
   }
   .flo-txt2 span{
     font-size: 13px;
     font-weight: 200;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora", sans-serif;
     letter-spacing: 1px;
   }
 
@@ -780,14 +824,13 @@ nav:hover .nav-link1{
   }
   .flower-txt{
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans", sans-serif;
     line-height: 36px;
     letter-spacing: 2px;
     word-spacing: 4px;
   }
-  
   .flower-txt1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     padding-top: 1%;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -797,11 +840,14 @@ nav:hover .nav-link1{
     height: auto;
     padding-top: 4%;
     margin-left: 2%;
-    justify-content: space-evenly;
-    gap: 10% !important;
+    justify-content: space-between;
+    gap: 40% !important;
   }
   
-  
+  .shop-containt{
+    margin-left: -6em;
+    margin-right: 2em;
+  }
   .delivery-img{
     width: 140%;
     height: 268px;
@@ -816,7 +862,9 @@ nav:hover .nav-link1{
     background-repeat: no-repeat;
     transition: .4s ease-in;
   }
-  
+  .shop-containt1{
+    margin-right: 2em;
+  }
   .delivery-img2{
     width: 140%;
     height: 268px;
@@ -831,7 +879,9 @@ nav:hover .nav-link1{
     background-repeat: no-repeat;
     transition: .4s ease-in;
   }
-  
+  .shop-containt2{
+    margin-right: 2em;
+  }
   .delivery-img3{
     width: 140%;
     height: 268px;
@@ -863,11 +913,11 @@ nav:hover .nav-link1{
   }
   .deli-txt{
     padding-top: 8%;
-    padding-left: 3.6em;
+    padding-left: 6.8em;
     text-align: center;
     font-size: 13px;
     font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 2px;
   }
   .deli-txt:hover{
@@ -875,15 +925,28 @@ nav:hover .nav-link1{
   }
   .deli-txt1{
     padding-top: 1%;
-    padding-left: 5em;
+    padding-left: 6.6em;
+    text-align: center;
     font-size: 13px;
     font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     letter-spacing: 2px;
     color: rgb(97, 97, 97);
     opacity: 0;
   }
-  .deli-txt1:hover{
+  .shop-containt:hover .deli-txt1{
+    opacity: 1;
+    transition: .5s ease-in;
+  }
+  .shop-containt1:hover .deli-txt1{
+    opacity: 1;
+    transition: .5s ease-in;
+  }
+  .shop-containt2:hover .deli-txt1{
+    opacity: 1;
+    transition: .5s ease-in;
+  }
+  .shop-containt3:hover .deli-txt1{
     opacity: 1;
     transition: .5s ease-in;
   }
@@ -1071,7 +1134,7 @@ nav:hover .nav-link1{
 .team-title{
   font-size: 17px;
   color: #1b1b1b;
-  font-family: Lora, sans-serif;
+  font-family: "Lora", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -1168,33 +1231,33 @@ nav:hover .nav-link1{
   .deli-addtxt1{
     font-size: 14px;
     letter-spacing: 2px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
   }
   .deli-addtxt2{
     padding-top: 1%;
     font-size: 22px;
     font-weight: 510;
     letter-spacing: 6px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
   }
   .deli-columntxt{
     text-align: left;
   }
   .deli-text1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 4px;
   }
   .deli-text2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     font-size: 22px;
     font-weight: 100;
     letter-spacing: 4px;
     padding-top: 4%;
   }
   .deli-text3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -1218,7 +1281,7 @@ nav:hover .nav-link1{
     font-weight: 500;
     letter-spacing: 3px;
     color: rgba(128, 128, 128, 0.781);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans", sans-serif;
   }
   .share-b li{
     font-size: 13px;
@@ -1227,7 +1290,7 @@ nav:hover .nav-link1{
     text-align: left;
     column-gap: 20% !important;
     word-spacing: 10px !important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans", sans-serif;
   }
   .share-b li:hover{
     color: rgba(75, 75, 75, 0.836);
@@ -1249,7 +1312,7 @@ nav:hover .nav-link1{
   }
   .productform-optionname{
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans", sans-serif;
   }
   #deliver-p{
     display: inline-block;
@@ -1261,7 +1324,7 @@ nav:hover .nav-link1{
     max-width: 200px;
     vertical-align: top;
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     outline: none;
     border: none;
   }
@@ -1278,7 +1341,7 @@ nav:hover .nav-link1{
     border: 1px solid rgba(163, 163, 163, 0.781);
     font-size: 14px;
     font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 1px;
     overflow: hidden;
     width: 58%;
@@ -1437,7 +1500,7 @@ nav:hover .nav-link1{
     padding-top: 12%;
     padding-left: 15%;
     font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 3px;
     text-align: left;
   }
@@ -1445,21 +1508,21 @@ nav:hover .nav-link1{
     line-height: 26px;
     padding-left: 15%;
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     letter-spacing: 1px;
     text-align: left;
   }
   .store-locationtxt1 a{
     color: black;
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
   }
   .store-locationtxt2{
     line-height: 26px;
     padding-left: 15%;
     font-size: 14px;
     font-weight: 600;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     letter-spacing: 1px;
     text-align: left;
   }
@@ -1468,7 +1531,7 @@ nav:hover .nav-link1{
     padding-left: 8%;
     font-size: 14px;
     list-style: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 1px;
     text-align: left;
   }
@@ -1486,7 +1549,7 @@ nav:hover .nav-link1{
     border: 1px solid #aa7152;
     font-size: 14px;
     font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 1px;
     overflow: hidden;
     width: 54%;
@@ -1568,7 +1631,7 @@ nav:hover .nav-link1{
     margin-top: 10%;
     font-size: 14px;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 3px;
     margin-left: -8%;
   }
@@ -1580,7 +1643,7 @@ nav:hover .nav-link1{
     list-style: none;
     font-size: 14px;
     color: #c4b6b6;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     margin-left: -18%;
     letter-spacing: 1px;
   }
@@ -1597,7 +1660,7 @@ nav:hover .nav-link1{
     margin-top: 10%;
     font-size: 14px;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "lora",sans-serif;
     letter-spacing: 3px;
     margin-left: 30%;
   }
@@ -1605,7 +1668,7 @@ nav:hover .nav-link1{
     list-style: none;
     font-size: 14px;
     color: #c4b6b6;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     margin-left: 30%;
     letter-spacing: 1px;
     padding-top: 4%;
@@ -1619,7 +1682,7 @@ nav:hover .nav-link1{
     margin-top: 10%;
     font-size: 14px;
     color: #c4b6b6;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "open-sans",sans-serif;
     letter-spacing: 2px;
     margin-left: 24%;
   }
@@ -1656,8 +1719,186 @@ nav:hover .nav-link1{
     padding-top: 2%;
   }
 
-
+  #totop {
+    padding: 10px 14px;
+    border-radius: 20%;
+    background: rgb(255,255,255);
+    background: linear-gradient(140deg, rgba(255,255,255,1) 30%, rgba(159,132,147,1) 100%);
+    color: rgba(159,132,147,1);
+    font-size: 26px;
+    font-weight: 600;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+    right: 28px !important;
+    bottom: 28px;
+    z-index: 9999;
+  }
 
 @media(max-width: 991px){
-  
+  nav{
+    position: static;
+  }
+  .navbar-nav{
+    position: static;
+    margin-left: 6%;
+  }
+  .navbar-nav1{
+    margin-top: -1%;
+    flex-wrap: wrap;
+    position: static;
+    margin-left: 2.5%;
+    width: 10%;
+    line-height: 2.5em;
+  }
+  .navbar-collapse{
+    position: absolute;
+    height: 74vh;
+    background: rgb(159,132,147);
+    background: linear-gradient(114deg, rgba(159,132,147,1) 30%, rgba(164,51,93,1) 100%);
+    top: 5em;
+    left: 0;
+    right: 0;
+  }
+  .nav-link1::after{
+   opacity: 0;
+  }
+  .nav-items::after,.nav-items1::after,.nav-items2::after,.nav-items3::after{
+    opacity: 0;
+  }
+  .img-text{
+    top: 14em;
+  }
+  .flower-img{
+    height: 82%;
+  }
+  .middle-text{
+    top: 52%;
+  }
+  .flower-img1{
+    height: 82%;
+  }
+  .floral-img{
+    height: 106vh;
+   }
+   .floral-text{ 
+    top: 9%;
+    left: 26%;
+  }
+  .shop-containt{
+    margin-left: -4em;
+    margin-right: 3em;
+  }
+  .delivery-img{
+    height: 70vh;
+  }
+  .shop-containt1{
+   margin-right: 0;
+  }
+  .delivery-img2{
+    height: 70vh;
+  }
+  .shop-containt2{
+    margin-left: -4em;
+    margin-right: 3em;
+  }
+  .delivery-img3{
+    height: 70vh;
+  }
+  .shop-containt3{
+    margin-right: 0;
+  }
+  .delivery-img4{
+    height: 70vh;
+  }
+  .deli-txt{
+    padding-left: 10.2em;
+  }
+  .deli-txt1{
+    padding-left: 10em;
+  }
+  .client{
+   height: 66vh;
+  }
+  .client-containt{
+    top: 20%;
+    left: 16%;
+  }
+  .gift-img{
+    margin-top: 10%;
+  }
+  .testi-image{
+    height: 140vh;
+  }
+  .owl-carousel-testimony{
+    top: 16%;
+    left: 18%;
+  }
+  .owl-carousel-testimony .owl-dots{
+    left: 12%;
+ }
+ .container1{
+   margin-left: 6%;
+   gap: 8%;
+ }
+ #team{
+  height: 200vh;
+ }
+ .team-sec{
+   width: 100%;
+ }
+ .team-img{
+  height: 60vh;
+ }
+ .social-s{
+   margin-left: 20%;
+ }
+ .gal-flo{
+   height: 64vh;
+ }
+ .store-locationpic img{
+  width: 108%;
+ }
+ .store-locationbx{
+  margin-left: -16%;
+ }
+ .store-locationtxt{
+  padding-top: 2%;
+  padding-left: 2.4em;
+ }
+ .store-locationtxt1{
+  margin-top: -6%;
+  padding-left: 20%;
+  line-height: 19px;
+ }
+ .store-locationtxt2{
+  padding-left: 5em;
+  margin-top: -1em;
+ }
+ .store-openhours1{
+  padding-left: 10%;
+  margin-top: -0.4em;
+  line-height: 26px;
+ }
+ .direction-bttn1{
+  width: 84%;
+ }
+ .flowerfoot-box1{
+  margin-left: -2em;
+ }
+ .foot-txt{
+  margin-left: -6%;
+ }
+ .flowerfoot-box2{
+  margin-left: -1em;
+ }
+ .flowerfoot-box3{
+   margin-top: 1em;
+   margin-left: -8em;
+ }
 }  
+
+@media(max-width: 780px){
+
+}
