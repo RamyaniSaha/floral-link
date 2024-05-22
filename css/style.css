@@ -74,8 +74,8 @@ nav:hover .fa-bars{
 .navbar-nav{
  position: absolute;
  top: 68%;
- left: 70%;
- gap: 10%;
+ left: 68%;
+ gap: 4%;
  right: 0;
 }
 nav:hover .navbar-nav{
@@ -251,7 +251,6 @@ nav:hover .nav-link1{
   }
   .banner-buttonbx{
     display: flex;
-    grid-template-columns: 1fr,1fr !important;
     justify-content: flex-start;
     gap: 2%;
     margin: -8px;
@@ -758,6 +757,7 @@ nav:hover .nav-link1{
   .floral-background{
     width: 100%;
     height: auto;
+    margin-top: 8%;
   }
   .floral-img{
    position: relative;
@@ -1899,6 +1899,241 @@ nav:hover .nav-link1{
  }
 }  
 
-@media(max-width: 780px){
-
+@media(max-width: 770px){
+  .navbar-collapse{
+    top: 10em;
+  }
+  .navbar-nav1{
+    margin-left: 2%;
+  }
+  .banner-buttonbx{
+   flex-wrap: wrap;
+  }
+  .img-sec{
+    height: 64vh;
+  }
+  .img-text{
+    top: 22em;
+  }
+  .flower-img{
+    height: 42%;
+  }
+  .flower-img1{
+    height: 42%;
+  }
+  .floral-background{
+    margin-top: -22em;
+  }
+  .floral-img{
+    height: 80vh;
+  }
+  .floral-text{ 
+    top: 16%;
+  }
+  .shop-containt{
+    margin-left: -4em;
+    margin-right: 0;
+  }
+  .delivery-img{
+    height: 30vh;
+  }
+  .delivery-img2{
+    height: 30vh;
+  }
+  .shop-containt2{
+    margin-left: -4em;
+    margin-right: 0;
+  }
+  .delivery-img3{
+    height: 30vh;
+  }
+  .delivery-img4{
+    height: 30vh;
+  }
+  .client{
+    height: 46vh;
+  }
+   .gift-img{
+    margin-top: 0;
+  }
+  .testi-image{
+    height: 80vh;
+  }
+  .productform-item{
+    margin-left: 18%;
+    width: 88%;
+  }
+}
+@media(max-width: 560px){
+  .banner-buttonbx{
+    flex-wrap: wrap !important;
+  }
+  .flower-img{
+    width: 85%;
+  }
+  .flower-img1{
+    width: 80%;
+  }
+  .img-box2{
+    margin-top: -22em;
+    left: -6%;
+  }
+  .floral-text{
+    left: 15%;
+  }
+  .shop-containt{
+    margin-left: -10em;
+  }
+  .shop-containt1{
+    margin-left: -10em;
+  }
+  .shop-containt2{
+    margin-left: -10em;
+  }
+  .shop-containt3{
+    margin-left: -10em;
+  }
+  .deli-txt, .deli-txt1{
+    padding-left: 14.2em;
+  }
+  .middle-bttn1{
+    margin-left: 26%;
+    width: 34%;
+  }
+  .client{
+    margin-left: -4%;
+    height: 48vh;
+   }
+   .client-containt{
+     top: 10%;
+     left: 28%;
+   }
+   .client-co{
+   margin-left: 4%;
+  }
+  .deli-container{
+    flex-wrap: wrap;
+  }
+  .productform-item{
+    width: 60%;
+    margin-left: 1em;
+  }
+  .deli-columntxt{
+    margin-top: 6%;
+  }
+  .team-img{
+    width: 96%;
+    height: 40vh;
+  }
+  .gallery{
+    margin-top: 22em;
+  }
+  .gal-flo{
+    height: 40vh;
+  }
+  .store-locationdetails{
+    margin-top: 4em;
+  }
+  .store-locationtxt{
+    padding-top: 2%;
+    margin-left: 6em;
+  }
+  .store-locationtxt1{
+    margin-top: 1em;
+    line-height: 30px;
+    margin-left: 2em;
+   }
+   .store-locationtxt2{
+    margin-left: 12em;
+    margin-top: -1em;
+   }
+   .store-openhours1{
+    padding-left: 12em;
+    line-height: 30px;
+   }
+   .direction-bttn1{
+    width: 64%;
+   }
+   .flowerfoot-box1{
+    margin-left: 3em;
+   }
+   .flowerfoot-box2{
+    margin-left: -9em;
+   }
+}
+@media(max-width: 450px){
+  .img-text{
+    top: 12em;
+  }
+  .flowerfoot-box2{
+    margin-left: -6em;
+   }
+   .flowerfoot-box3{
+     margin-left: -5em;
+   }
+}
+@media(min-width: 320px) and (max-width:380px){
+  .flower-img{
+    margin-left: 2em;
+    height: 32%;
+  }
+  .middle-text{
+    top: 22%;
+  }
+  .img-box2{
+    margin-top: -26em;
+  }
+  .flower-img1{
+    width: 86%;
+    margin-left: 1em;
+    height: 32%;
+  }
+  .floral-text{ 
+    left: 6%;
+  }
+  .shop-containt{
+    margin-left: -6em;
+  }
+  .shop-containt1{
+    margin-left: -6em;
+  }
+  .shop-containt2{
+    margin-left: -6em;
+  }
+  .shop-containt3{
+    margin-left: -6em;
+  }
+  .testi-image{
+    height: 120vh;
+  }
+  .flower-gal{
+    margin-top: 48em;
+  }
+ .deli-addpic{
+  width: 40%;
+ }
+ #team{
+  height: 210vh;
+ }
+ #flower-gallery{
+  margin-top: -42em;
+ }
+ .store-locationtxt{
+  margin-left: 4em;
+}
+.store-locationtxt2{
+  margin-left: 6em;
+ }
+ .store-openhours1{
+  padding-left: 6em;
+ }
+ .flowerfoot-box1{
+  margin-left: 1em;
+ }
+ .flowerfoot-box2{
+  margin-left: -4em;
+ }
+ .flowerfoot-box3{
+  margin-left: -3em;
+ }
 }
