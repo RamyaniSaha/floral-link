@@ -656,8 +656,8 @@ transform:scale(0.8);
     position: relative;
     background-image: url("../images/wedding_005_1400x.webp");
     width: 100%;
-    height: auto;
-    padding: 14em 0;
+    height: 100%;
+    padding: 6em 0;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2486,10 +2486,6 @@ transform:scale(0.8);
     aspect-ratio: 3 / 2.4;
   }
 
-  .img-sec{
-    padding: 10em 0;
-  }
-
   .img-text{
     top: 40%;
   }
@@ -2633,8 +2629,8 @@ transform:scale(0.8);
     font-size: 12px;
   }
 
-  .middle-bttn1{
-   width: 52%;
+  .middle-bttn, .middle-bttn1{
+   width: 48%;
   }
 }
 @media only screen and (max-width: 469.8px){
