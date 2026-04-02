@@ -799,18 +799,6 @@
     </script>
 
     <script>
-      let isResizing = false;
-
-      $(window).on('resize', function () {
-      isResizing = true;
-
-      setTimeout(() => {
-        isResizing = false;
-      }, 300);
-     });
-    </script>
-
-    <script>
       let totop = document.getElementById("totop");
     window.addEventListener("scroll", () => {
       if(document.body.scrollTop >100 || document.documentElement.scrollTop >100){
