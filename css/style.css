@@ -63,7 +63,7 @@ html, body{
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    z-index: 9998;
+    z-index: 99998;
 }
 
 .nav-logo{
@@ -93,7 +93,6 @@ html, body{
 
 .main-navbar.sticky .navbar-toggler{
   position: relative;
-  top: 0.22em;
   color: black !important;
   align-items: center;
   margin: auto;
@@ -350,15 +349,15 @@ transform:scale(0.8);
     z-index: 2;
   }
   .owl-carousel-banner .active .banner-txt{
-   animation: flip 4s ease-in;
+   animation: flip .4s ease-in;
   }
 
   .owl-carousel-banner .active .banner-txt1{
-    animation: fadeInUpBig 4s ease-in;
+    animation: fadeInUpBig .4s ease-in;
   }
 
   .owl-carousel-banner .active .banner-buttonbx{
-    animation: rollIn 4s ease-in;
+    animation: rollIn .4s ease-in;
   }
 
   .banner-text{
@@ -2456,11 +2455,11 @@ transform:scale(0.8);
   }
 
   .navbar-toggler {
-    left: 0em;
+    left: 0.9em;
   }
 
   .icon-wrapper i{
-    font-size: 18px;
+    font-size: 16px;
   }
  
   .banner-txt1{
