@@ -1592,27 +1592,6 @@
       });
     </script>
 
-    <script>
-      $(document).ready(function(){
-        $(window).on('resize', function () {
-
-         setTimeout(function () {
-
-           let docHeight = $(document).height();
-           let winHeight = $(window).height();
-           let scrollTop = $(window).scrollTop();
-
-            // If user is near bottom → snap to bottom again
-           if (scrollTop + winHeight > docHeight - 100) {
-              $(window).scrollTop(docHeight);
-            }
-
-          }, 300);
-
-        });
-      });
-    </script>
-
 
   </body>
 </html>
