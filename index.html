@@ -991,25 +991,6 @@
      <script>
       document.querySelectorAll(".banner").forEach(card => {
 
-         let resizing = false;
-
-        $(document).ready(function () {
-
-        // resize handler
-         $(window).on('resize', function () {
-
-           resizing = true;
-
-            setTimeout(() => {
-             resizing = false;
-              }, 300);
-
-            });
-
-          // other code...
-
-        });
-
         const container = card.querySelector(".falling-petals");
         const petals = [];
 
@@ -1060,11 +1041,6 @@
               p.style.opacity = 1;
 
             });
-
-            if (resizing) {
-              requestAnimationFrame(animate);
-              return;
-            }
 
           requestAnimationFrame(animate);
         }
@@ -1154,25 +1130,6 @@
     <script>
       document.querySelectorAll(".team-card").forEach(card => {
 
-        let resizing = false;
-
-        $(document).ready(function () {
-
-        // resize handler
-         $(window).on('resize', function () {
-
-           resizing = true;
-
-            setTimeout(() => {
-             resizing = false;
-              }, 300);
-
-            });
-
-          // other code...
-
-        });
-
 
         const container = card.querySelector(".team-petals-3d");
         const petals = [];
@@ -1225,11 +1182,6 @@
 
             });
 
-             if (resizing) {
-    requestAnimationFrame(animate);
-    return;
-  }
-
 
           requestAnimationFrame(animate);
         }
@@ -1264,25 +1216,6 @@
      <!--random petals2 per card-->
     <script>
       document.querySelectorAll(".con-client-container").forEach(card => {
-
-        let resizing = false;
-
-        $(document).ready(function () {
-
-        // resize handler
-         $(window).on('resize', function () {
-
-           resizing = true;
-
-            setTimeout(() => {
-             resizing = false;
-              }, 300);
-
-            });
-
-          // other code...
-
-        });
 
 
         const container = card.querySelector(".counter-petals");
@@ -1336,12 +1269,6 @@
 
             });
 
-             if (resizing) {
-    requestAnimationFrame(animate);
-    return;
-  }
-
-
           requestAnimationFrame(animate);
         }
 
@@ -1376,25 +1303,6 @@
     <script>
       
       document.querySelectorAll(".testimony-img").forEach(card => {
-
-         let resizing = false;
-
-        $(document).ready(function () {
-
-        // resize handler
-         $(window).on('resize', function () {
-
-           resizing = true;
-
-            setTimeout(() => {
-             resizing = false;
-              }, 300);
-
-            });
-
-          // other code...
-
-        });
         
 
         const container = card.querySelector(".testimony-petals");
@@ -1447,11 +1355,6 @@
               p.style.opacity = 1;
 
             });
-
-             if (resizing) {
-    requestAnimationFrame(animate);
-    return;
-  }
 
 
           requestAnimationFrame(animate);
