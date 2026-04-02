@@ -657,9 +657,9 @@ transform:scale(0.8);
     position: relative;
     background-image: url("../images/wedding_005_1400x.webp");
     width: 100%;
-    height: 100%;
+    height: auto;
     padding: 14em 0;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -2486,6 +2486,14 @@ transform:scale(0.8);
   .flower-img, .flower-img1 {
     aspect-ratio: 3 / 2.4;
   }
+
+  .img-sec{
+    padding: 10em 0;
+  }
+
+  .img-text{
+    top: 40%;
+  }
   
 
   .floral-text{
@@ -2624,6 +2632,10 @@ transform:scale(0.8);
    .bttn{
     width: 56%;
     font-size: 12px;
+  }
+
+  .middle-bttn1{
+   width: 52%;
   }
 }
 @media only screen and (max-width: 469.8px){
