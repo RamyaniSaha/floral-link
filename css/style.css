@@ -2630,7 +2630,7 @@ transform:scale(0.8);
   }
 
   .middle-bttn, .middle-bttn1{
-   width: 48%;
+   width: auto;
   }
 }
 @media only screen and (max-width: 469.8px){
