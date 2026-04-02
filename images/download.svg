@@ -1,0 +1,24 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="petalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd1dc"></stop>
+      <stop offset="50%" stop-color="#ff9eb5"></stop>
+      <stop offset="100%" stop-color="#ff7fa3"></stop>
+    </linearGradient>
+  </defs>
+
+  <path d="
+    M32 4
+    C42 10, 52 20, 48 32
+    C44 44, 34 54, 28 58
+    C22 52, 12 42, 14 30
+    C16 18, 24 10, 32 4
+    Z
+  " fill="url(#petalGradient)"></path>
+
+  <!-- subtle vein highlight -->
+  <path d="
+    M32 8
+    C34 20, 34 36, 30 54
+  " stroke="#ffffff" stroke-width="1.5" opacity="0.4" fill="none"></path>
+</svg>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Link</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -15,53 +15,75 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <main>
-      <header>
-        <nav class="navbar navbar-expand-lg bg-body-transparent">
+    
+    <div class="floral-progress"></div>
+
+    <div class="flower-trail-container"></div>
+    <header>
+
+
+          <nav class="navbar navbar-expand-lg bg-body-transparent main-navbar">
+
             <div class="container nav-container">
-              <a id="logo" class="navbar-brand" href="#"><img class="nav-logo" alt="" src=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse d-flex-wrap" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <li class="nav-item">
-                         <a class="nav-link" aria-current="page">Account</a>
-                      </li>
-                      <li class="nav-item">
-                         <a class="nav-link">Search</a>
-                      </li>
-                      <li class="nav-item">
-                         <a class="nav-link">Cart <span class="cart">(0)</span></a>
-                      </li>
-                  </li> 
-                </ul>
-                <ul class="navbar-nav1 me-auto mb-2 mb-lg-0 d-flex d-flex-wrap">
-                  <li class="nav-item2">
-                      <li class="nav-item1">
-                         <a class="nav-link1" aria-current="page">Welcome</a>
-                      </li>
-                      <li class="nav-item1 nav-items">
-                         <a class="nav-link1">Shop</a>
-                      </li>
-                      <li class="nav-item1 nav-items1">
-                         <a class="nav-link1">Blog</a>
-                      </li>
-                      <li class="nav-item1 nav-items2">
-                        <a class="nav-link1">About</a>
-                     </li>
-                     <li class="nav-item1 nav-items3">
-                       <a class="nav-link1">Contact</a>
-                     </li>
-                  </li> 
-                </ul>
-              </div>
-            </div>
-            
-          </nav>
-         </header>
-         <div class="banner">
+
+               <a id="logo" class="navbar-brand" href="#">
+                  <img class="nav-logo logo-light" src="./images/FI_copper_landscape_standard_white_205x.webp" alt="">
+                  <img class="nav-logo logo-dark" src="./images/FI_copper_landscape_standard_205x.avif" alt="">
+                </a>
+
+                <button class="navbar-toggler floral-toggle" type="button">
+                  <span class="icon-wrapper">
+                    <i class="fa-solid fa-spa spa-icon"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                 </span>
+               </button>
+
+                <div class="navbar-menu" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav1 me-auto mb-2 mb-lg-0 d-flex">
+
+                    <li class="nav-item1">
+                      <a class="nav-link1" href="#banner">Welcome</a>
+                   </li>
+
+                   <li class="nav-item1 nav-items">
+                     <a class="nav-link1" href="#floral-img">About</a>
+                   </li>
+
+                   <li class="nav-item1 nav-items">
+                     <a class="nav-link1" href="#delivery">Shop</a>
+                   </li>
+
+                   <li class="nav-item1 nav-items">
+                     <a class="nav-link1" href="#testimony">Testimonial</a>
+                   </li>
+
+                   <li class="nav-item1 nav-items">
+                     <a class="nav-link1" href="#team">Team</a>
+                   </li>
+
+                   <li class="nav-item1 nav-items">
+                     <a class="nav-link1" href="#flower-gallery">Gallery</a>
+                   </li>
+
+                   <li class="nav-item1 nav-items">
+                     <a class="nav-link1" href="#store-address">Contact</a>
+                   </li>
+
+                  </ul>
+
+                </div>
+         </div>
+       </nav>
+       <div class="menu-overlay"></div>
+    </header>
+
+  <div id="banner" class="banner">
+    <div class="falling-petals"></div>
+      <div class="petal-layer blur-layer"></div>
+      <div class="petal-layer main-layer"></div>
+      <div class="petal-layer float-layer"></div>
+
           <div class="owl-carousel owl-theme owl-carousel-banner">
             <div class="item">
               <img class="banner-pic" src="images/Will-Edith-10-Years-74-Cropped_1400.x.jpg">
@@ -108,17 +130,16 @@
               </div>
             </div>
          </div>
-        </div>
-    </main>
+  </div>
     <!--header ends here-->
     <!--about section starts here-->
-    <section class="about mt-5">
+    <section id="about" class="about">
       <div class="container con-a">
         <div class="row about-row">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="a-card mb-5">
               <div class="a-card-box">
-                <div class="a-img ms-5">
+                <div class="a-img">
                   <img class="a-image" src="images/custom-icon-1.png" alt="">
                 </div>
                 <h5 class="a-txt-title text-center">READY TO BE IMPRESSED</h5>
@@ -129,7 +150,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="a-card2">
               <div class="a-card-box">
-                <div class="a-img ms-5">
+                <div class="a-img">
                   <img class="a-image" src="images/custom-icon-2.png" alt="">
                 </div>
                 <h5 class="a-txt-title text-center">POWERFUL SOLUTIONS</h5>
@@ -140,7 +161,7 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="a-card3">
               <div class="a-card-box">
-                <div class="a-img ms-5">
+                <div class="a-img">
                   <img class="a-image" src="images/custom-icon-3.png" alt="">
                 </div>
                 <h5 class="a-txt-title text-center">LEADERS OF TOMORROW</h5>
@@ -155,7 +176,7 @@
     <!--middle-section starts here-->
     <div class="section">
       <section class="img-sec">
-       <div class="overlay">
+       <div class="overlay"></div>
          <div class="img-text">
           <p>
             HAND-CRAFTED IN THE BLUE MOUNTAINS
@@ -167,15 +188,14 @@
             <a href="#" class="bttn mt-4"><span>WEDDING QUOTES</span></a>
           </div>
          </div>
-       </div>
       </section>
       <!--middle grid starts here-->
-      <section class="container mt-5">
-        <div class="row">
+      <section class="container img-con mt-5">
+        <div class="row img-row">
           <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="img-box1">
-                <div class="flower-img">
-                  <div class="over-lay">
+                <div class="flower-img" style="background-image: url(../images/171122_FLORAL_INK_095-1_1000x.jpg);">
+                  <div class="over-lay"></div>
                     <div class="middle-text">
                       <p class="middle-txt">BLUE MOUNTAINS DELIVERY</p>
                       <h4> BOUQUETS</h4>
@@ -183,14 +203,13 @@
                         <a href="#" class="middle-bttn"><span>VIEW BOUQUETS</span></a>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="img-box2">
-              <div class="flower-img1">
-                <div class="over-lay">
+              <div class="flower-img1" style="background-image: url(../images/Hamper-Romance_0873_1000x.jpg);">
+                <div class="over-lay"></div>
                   <div class="middle-text">
                     <p class="middle-txt">BLUE MOUNTAINS DELIVERY</p>
                     <h4> ARTISAN HAMPERS</h4>
@@ -198,7 +217,6 @@
                       <a href="#" class="middle-bttn"><span>VIEW HAMPERS</span></a>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -207,32 +225,31 @@
       <!--middle grid ends here-->
       <!--floral-background starts here-->
       <section class="floral-background">
-        <div class="floral-img">
-          <div class="over">
+        <div id="floral-img" class="floral-img">
+          <div class="over"></div>
             <div class="floral-text">
               <h6 class="flo-txt">FLORAL INK</h6>
-              <h4 class="flo-txt1">FLORAL ARTISTRY IN THE <br>BLUE MOUNTAINS</h4>
-              <p class="flo-txt2">Composing beautiful floral arrangements is like creating an<br>
-                artwork with ink - fluid & lyrical. Flowers by Blue <br>
-                Mountains florist Floral Ink capture the spirit of every<br>
-                occasion with unspoken words, transforming your special <br>
-                event into a creative celebration to be remembered for a<br>
+              <h4 class="flo-txt1">FLORAL ARTISTRY IN THE BLUE MOUNTAINS</h4>
+              <p class="flo-txt2">Composing beautiful floral arrangements is like creating an
+                artwork with ink - fluid & lyrical. Flowers by Blue 
+                Mountains florist Floral Ink capture the spirit of every
+                occasion with unspoken words, transforming your special 
+                event into a creative celebration to be remembered for a
                 lifetime.
               </p>
               <p class="flo-txt2">
-                <span><u>Contact Edith</u></span> for a personalised consultation for floral<br>
-                 styling and arrangements for your wedding, business or<br>
+                <span><u>Contact Us</u></span> for a personalised consultation for floral
+                 styling and arrangements for your wedding, business or
                  special occasion.
               </p>
             </div>
-          </div>
         </div>
-      </se>
+      </section>
       <!--floral-background starts here-->
     </div>
     <!--middle-section ends here-->
     <!--delivery section starts here-->
-    <section class="delivery">
+    <section id="delivery" class="delivery">
       <div class="flower-delivery">
         <h6 class="flower-txt">
           BLUE MOUNTAINS DELIVERY
@@ -281,36 +298,42 @@
     <!--client section starts here-->
     <section class="clients mt-5">
       <div class="con-client-container">
-        <div class="client-img ps-4">
-          <img alt="" class="client">
-        </div>
+        <div class="client-img">
+          <div class="client">
           <div class="container client-containt">
             <div class="row client-row">
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="client-cont">
-                  <h3 class="client-c" id="client-c1">0</h3>
+                  <div class="petals-brusts"></div>
+                  <h3 class="client-c" id="client-c1" data-target="86">0</h3>
                   <h5 class="client-co">BLOG POSTS</h5>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="client-cont">
-                  <h3 class="client-c ps-2" id="client-c2">0</h3>
+                  <div class="petals-brusts"></div>
+                  <h3 class="client-c ps-2" id="client-c2" data-target="25">0</h3>
                   <h5 class="client-co">HAPPY CLIENTS</h5>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="client-cont">
-                  <h3 class="client-c ps-2" id="client-c3">0</h3>
+                  <div class="petals-brusts"></div>
+                  <h3 class="client-c ps-2" id="client-c3" data-target="17">0</h3>
                   <h5 class="client-co">WEB AWARDS</h5>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="client-cont">
-                  <h3 class="client-c ps-2" id="client-c4">0</h3>
+                  <div class="petals-brusts"></div>
+                  <h3 class="client-c ps-2" id="client-c4" data-target="98">0</h3>
                   <h5 class="client-co">FLOWER SORTS</h5>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="counter-petals"></div>
+          </div>
           </div>
       </div>
     </section>
@@ -319,7 +342,7 @@
     <section class="gift mt-5 mb-5">
       <div class="container gift-container">
         <div class="row">
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="gift-box">
               <div class="gift-text mt-2">
                 <p class="wonder-text">Wonderful gift </p>
@@ -330,7 +353,7 @@
               <button class="gift-bttn mt-4">Read More</button>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="gift-img">
               <img src="images/h1-img-1.jpg" alt="" class="gift-image" width="100%">
             </div>
@@ -340,10 +363,10 @@
     </section>
     <!--gift section ends here-->
     <!--testimonial section starts here-->
-     <section id="testimony">
+    <section id="testimony">
       <div class="testimony-img mt-5">
-        <img class="testi-image" alt="">
-       <div class="owl-carousel owl-theme owl-carousel-testimony ms-5">
+        <div class="testi-image">
+       <div class="owl-carousel owl-theme owl-carousel-testimony">
          <div class="item">
           <div class="testmonial-txtholder text-center">
             <p class="testimonial-title">Testimonial</p>
@@ -369,84 +392,11 @@
           </div>
          </div>
        </div>
+       <div class="testimony-petals"></div>
+       </div>
       </div>    
     </section>
     <!--testimonial section ends here-->
-    <!--delivery address section starts here-->
-    <section class="deli-address">
-      <div class="deli-addtxt">
-        <p class="deli-addtxt1">BLUE MOUNTAINS DELIVERY</p>
-        <h6 class="deli-addtxt2">FEATURED BOUQUET</h6>
-        <div class="container1 d-flex mt-2 text-center deli-container">
-            <div class="bouquet">
-              <div class="deli-addpic">
-                <img src="images/171122_FLORAL_INK_094_400x.webp" alt="">
-              </div>
-            </div>
-            <div class="bouquet1">
-              <div class="deli-columntxt">
-                <p class="deli-text1">FLORAL INK</p>
-                <h4 class="deli-text2">VICTORIA FALLS</h4>
-                <h5 class="deli-text3">$165.00</h5>
-              </div>
-              <div class="share-box">
-                <ul class="share-b d-flex">
-                  <p class="share-text">
-                    SHARE
-                  </p>
-                  <li><i class="fa-brands fa-facebook-f"></i></li>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
-              </div>
-              <div class="productform-varient">
-                <div class="productform-option">
-                  <button type="button" class="productform-item" aria-expanded="false">
-                    <form class="productform-optionname d-flex justify-content-start">
-                      <label for="delivery-post" class="delivery-post"> Delivery Postcode:
-                        <select name="" id="deliver-p">
-                          <option value="contactus">Contact us if outside Blue Mountains delivery area</option>
-                          <option value="contactus">2773-GlenBrook</option>
-                          <option value="contactus">2776-FaulConbridge</option>
-                          <option value="contactus">Kolkata</option>
-                          <option value="contactus">Delhi</option>
-                          <option value="contactus">Bombay</option>
-                          <option value="contactus">Barasat</option>
-                        </select>
-                      </label>
-                    </form>
-                  </button>
-                  <button type="button" class="productform-item" aria-expanded="false">
-                    <form class="productform-optionname d-flex justify-content-start">
-                      <label for="delivery-post" class="delivery-post"> Presntation: 
-                        <select name="" id="deliver-p">
-                          <option value="presntation">Wrapped</option>
-                          <option value="presntation">Vase-Medium</option>
-                          <option value="presntation">Vase-Tall</option>
-                        </select>
-                      </label>
-                    </form>
-                  </button>
-                  <button type="button" class="productform-item" aria-expanded="false">
-                    <form class="productform-optionname d-flex justify-content-start">
-                      <label for="delivery-post" class="delivery-post"> Size: 
-                        <select name="" id="deliver-p">
-                          <option value="size">Medium</option>
-                          <option value="size">Large</option>
-                        </select>
-                      </label>
-                    </form>
-                  </button>
-                  <div class="product-bttn">
-                    <a href="#" class="product-bttn1 mt-4"><span>ADD TO CART</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <!--delivery address section ends here-->
 
     <!--team section starts here-->
     <div id="team">
@@ -456,8 +406,8 @@
           <h2 class="team-txt text-center">OUR TEAM OF EXPERTS</h2>
         </div>
         <div class="container team-containt">
-          <div class="row mt-5">
-            <div class="col-lg-3 col-md-6">
+          <div class="row mt-5 team-row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="team-card">
                 <div class="team-imgbx">
                   <img src="images/team-1.jpg" alt="" class="team-img">
@@ -468,14 +418,15 @@
                 </div>
                 <div class="social mt-3">
                   <ul class="social-s d-flex">
-                    <li class="social-symbol"><i class="fa-brands fa-facebook-f"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                   </ul>
                 </div>
+                 <div class="team-petals-3d"></div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="team-card">
                 <div class="team-imgbx">
                   <img src="images/team-2.jpg" alt="" class="team-img">
@@ -486,14 +437,15 @@
                 </div>
                 <div class="social mt-3">
                   <ul class="social-s d-flex">
-                    <li class="social-symbol"><i class="fa-brands fa-facebook-f"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                   </ul>
                 </div>
+                 <div class="team-petals-3d"></div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="team-card">
                 <div class="team-imgbx">
                   <img src="images/team-3.jpg" alt="" class="team-img">
@@ -504,14 +456,15 @@
                 </div>
                 <div class="social mt-3">
                   <ul class="social-s d-flex">
-                    <li class="social-symbol"><i class="fa-brands fa-facebook-f"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                   </ul>
                 </div>
+                 <div class="team-petals-3d"></div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="team-card">
                 <div class="team-imgbx">
                   <img src="images/team-4.jpg" alt="" class="team-img">
@@ -522,11 +475,12 @@
                 </div>
                 <div class="social mt-3">
                   <ul class="social-s d-flex">
-                    <li class="social-symbol"><i class="fa-brands fa-facebook-f"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="social-symbol"><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-symbol"><a class="socials" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                   </ul>
                 </div>
+                 <div class="team-petals-3d"></div>
               </div>
             </div>
           </div>
@@ -544,10 +498,10 @@
           </p>
         </div>
         <div class="container gal-container text-center">
-          <div class="row">
+          <div class="row g-0">
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/358782156_1017453385913874_1090649505541289319_n.jpg" alt="">
+                <img class="gallery-img" src="images/358782156_1017453385913874_1090649505541289319_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -557,7 +511,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/357280722_24062039380061787_4684791709255667602_n.jpg" alt="">
+                <img class="gallery-img" src="images/357280722_24062039380061787_4684791709255667602_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -567,7 +521,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/358004369_293814949780582_2790661150031414114_n.jpg" alt="">
+                <img class="gallery-img" src="images/358004369_293814949780582_2790661150031414114_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -577,7 +531,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/356429448_959155895206749_6550255178583868826_n.jpg" alt="">
+                <img class="gallery-img" src="images/356429448_959155895206749_6550255178583868826_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -587,7 +541,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/352617665_6852313278115473_1587923393418021132_n.jpg" alt="">
+                <img class="gallery-img" src="images/352617665_6852313278115473_1587923393418021132_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -597,7 +551,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/351767206_279121147894487_7876499210486199927_n.jpg" alt="">
+                <img class="gallery-img" src="images/351767206_279121147894487_7876499210486199927_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -607,7 +561,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/352515722_1721468381702585_2642305794987841133_n.jpg" alt="">
+                <img class="gallery-img" src="images/352515722_1721468381702585_2642305794987841133_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -617,7 +571,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gallery-box">
-                <img class="gallery-img" src="images/352225760_242860358386533_1093646486423429026_n.jpg" alt="">
+                <img class="gallery-img" src="images/352225760_242860358386533_1093646486423429026_n.jpg" height="288px" alt="">
                 <div class="overlay1">
                   <div class="social-i">
                     <i class="fa-brands fa-instagram"></i>
@@ -636,46 +590,54 @@
           <p class="wonder-text">Wonderful gift </p>
           <h2 class="gift-title">GALLERY OF WORK </h2>
         </div>
-        <div class="container flower-container">
-          <div class="row">
+        <div class="container flowergallery-containers">
+          <div class="row flowergallery-rows">
             <div class="col-lg-3 col-md-6 flower-col">
               <div class="gal-flower">
-                <img src="images/h2-gallery-img-1.jpg" alt="" class="gal-flo">
+                <img src="images/h2-gallery-img-1.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/h2-gallery-img-2.jpg" alt="" class="gal-flo">
+                <img src="images/h2-gallery-img-2.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/h2-gallery-img-3.jpg" alt="" class="gal-flo">
+                <img src="images/h2-gallery-img-3.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/h2-gallery-img-4.jpg" alt="" class="gal-flo">
+                <img src="images/h2-gallery-img-4.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/h2-gallery-img-5.jpg" alt="" class="gal-flo">
+                <img src="images/h2-gallery-img-5.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/h2-gallery-img-6.jpg" alt="" class="gal-flo">
+                <img src="images/h2-gallery-img-6.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/27880932_2007819639432779_2004905628719382528_n.jpg" alt="" class="gal-flo">
+                <img src="images/27880932_2007819639432779_2004905628719382528_n.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="gal-flower">
-                <img src="images/gallery-img-3.jpg" alt="" class="gal-flo">
+                <img src="images/gallery-img-3.jpg" height="288px" alt="" class="gal-flo">
+                <div class="gal-overlay"></div>
               </div>
             </div>
           </div>
@@ -683,24 +645,24 @@
       </div>
     </div>
     <!--store-address section starts here-->
-      <sction class="store-address">
+      <sction id="store-address" class="store-address">
         <div class="store-location">
           <div class="store-locationbx mt-5">
-            <div class="container text-left">
-              <div class="row">
-                <div class="col-md-8">
+            <div class="container text-left store-con">
+              <div class="row store-row justify-content-between">
+                <div class="col-lg-8 col-md-6 col-sm-12">
                   <div class="store-locationpic">
-                    <img src="images/florist-shop_1500x.webp" width="100%" alt="" class="store-pic">
+                    <img class="store-location img" src="./images/florist-shop_1500x.webp" alt="">
                   </div>                
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 text-center">
                   <div class="store-locationdetails">
                     <h4 class="store-locationtxt">OUR STORE</h4>
                     <p class="store-locationtxt1 pt-3">10 Station St Wentworth Falls</p>
-                    <p class="store-locationtxt1">Phone: <a href="#"> 0409 761 911 </a>(Store Hours Only)</p>
-                    <div class="store-locationdetails1 pt-2">
+                    <p class="store-locationtxt1">Phone: <a href="#"> (654) 321-7654 </a>(Store Hours Only)</p>
+                    <div class="store-locationdetails1 pt-1">
                       <h6 class="store-locationtxt2">Opening Hours</h6>
-                      <ul class="store-openhours pt-2">
+                      <ul class="store-openhours pt-1">
                         <li class="store-openhours1">Monday ~ 9am to 2pm</li>
                         <li class="store-openhours1">Tuesday ~ 9am to 4:30pm</li>
                         <li class="store-openhours1">Wednesday ~ 9am to 4:30pm</li>
@@ -709,7 +671,7 @@
                         <li class="store-openhours1">Saturday ~ 9am to 4.30pm</li>
                         <li class="store-openhours1">Sunday ~ 10am to 2pm</li>
                       </ul>
-                      <p class="store-locationtxt1 pt-2">Our hours are subject to change</p>
+                      <p class="store-locationtxt1 pt-1">Our hours are subject to change</p>
                       <div class="dirrection-bttn">
                         <a href="#" class="direction-bttn1 mt-4"><span>GET DIRECTIONS</span></a>
                       </div>
@@ -724,20 +686,21 @@
     <!--store-address section ends here-->
     <!--footer section starts here-->
     <footer>
-      <div class="foot-img">
-        <div class="overlay"></div>
-      <section class="foot">
-        <div class="foot-bx ms-2 mt-2">
-          <div class="container text-left">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 flowerfoot-box1">
-                <h4 class="foot-txt" style="color: white">
-                  FLORAL INK
-                </h4>
+      <div class="foot-img mt-5">
+        <div class="foot-overlay"></div>
+      <div class="foots mt-2">
+        <section class="foot">
+        <div class="foot-bx">
+          <div class="container foot-container text-left">
+            <div class="foot-row d-flex justify-content-between">
+              <div class="flowerfoot-box1">
+                <div class="foot-logo">
+                   <img class="foot-logo" src="./images/FI_copper_landscape_standard_white_205x.webp" alt="">
+                </div>
                 <ul class="foot-txt1">
                   <li class="foot-txtbx">BEAUTIFUL FLOWERS FOR EVERY OCCASION</li>
-                  <li class="foot-txtbx">10 Station St, Wentworth Falls, Blue Mountains NSW</li>
-                  <li class="foot-txtbx">Phone: <a href="#">0409 761 911</a></li>
+                  <li class="foot-txtbxs">10 Station St, Wentworth Falls, Blue Mountains NSW</li>
+                  <li class="foot-txtbxs pt-1">Phone: <a href="#">(654) 321-7654</a></li>
                 </ul>
                 <div class="foot-social d-flex justify-content-between">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -745,18 +708,19 @@
                   <i class="fa-brands fa-pinterest"></i>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 flowerfoot-box2">
+              <div class="flowerfoot-box2">
                 <h4 class="foot-txt2">
                   MORE ABOUT FLORAL INK
                 </h4>
-                <li class="foot-txtbx1">Terms & Conditions</li>
+                <li class="foot-txtbx1">Home</li>
                 <li class="foot-txtbx1">About Edith</li>
-                <li class="foot-txtbx1">Flower Delivery</li>
                 <li class="foot-txtbx1">Shop Online</li>
-                <li class="foot-txtbx1">Returns & Refund Policy</li>
+                <li class="foot-txtbx1">Testimonial</li>
+                <li class="foot-txtbx1">Team</li>
                 <li class="foot-txtbx1">Contact Us</li>
+                <li class="foot-txtbx1">Terms & Conditions</li>
               </div>
-              <div class="col-lg-4 col-md-6 flowerfoot-box3">
+              <div class="flowerfoot-box3">
                 <p class="foot-txt3">
                   Website by <a href="#">hello25.com.au</a>
                 </h4>
@@ -766,18 +730,21 @@
         </div>
       </section>
       <section class="foot1">
-        <p class="foot-textbx">
-          © FLORAL INK
+        <p class="foot-textbx"><a href="#">
+          © FLORAL INK</a>
         </p>
       </section>
       </div>
+      </div>
     </footer>
     <!--footer section ends here-->
+
     <button onclick="backToTop()" id="totop"><i class="fa-solid fa-chevron-up"></i></button>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="index.js"></script>
+
     <script>
       $(document).ready(function () {
         $('.owl-carousel-banner').owlCarousel({
@@ -801,11 +768,11 @@
             items:1
            }
          }
-        })
+        });
 
         $('.owl-carousel-testimony').owlCarousel({
           loop:true,
-          margin: 50,
+          margin: 150,
           nav: false,
           dots:true,
           autoplay: true, 
@@ -822,10 +789,27 @@
             items:1
            }
          }
-        })
-      })
+        });
+         $(window).on('resize', function () {
+       $('.owl-carousel-banner').trigger('refresh.owl.carousel');
+        $('.owl-carousel-testimony').trigger('refresh.owl.carousel');
+       });
+      });
       AOS.init();
     </script>
+
+    <script>
+      let isResizing = false;
+
+      $(window).on('resize', function () {
+      isResizing = true;
+
+      setTimeout(() => {
+        isResizing = false;
+      }, 300);
+     });
+    </script>
+
     <script>
       let totop = document.getElementById("totop");
     window.addEventListener("scroll", () => {
@@ -844,17 +828,791 @@
 
     <script>
       $(document).ready(function(){
-        var num = 100;
-       $(window).bind('scroll',function(){
-        if ($(window).scrollTop() >= num){
-          $("nav").addClass('fixed').css('background-color','#ffff');
-        }else{
-          $("nav").removeClass('fixed').css('background-color','transparent');
-        }
-       })
-      })
 
+       $(".floral-toggle").click(function(){
+
+         $(this).toggleClass("active");
+
+         $(".navbar-menu").toggleClass("active");
+
+         $(".menu-overlay").toggleClass("active");
+
+        });
+
+
+        $(".menu-overlay").click(function(){
+
+           $(this).removeClass("active");
+
+         $(".navbar-menu").removeClass("active");
+
+         $(".floral-toggle").removeClass("active");
+
+        });
+
+      });
+    </script>
+
+    <!--jQuery (Scroll + Active Link)-->
+   <script>
+     let scrollTimeout;
+
+   $(window).on("scroll", function(){
+
+  clearTimeout(scrollTimeout);
+
+  scrollTimeout = setTimeout(function(){
+
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var navHeight = $(".main-navbar").outerHeight();
+    var centerLine = scrollPos + (windowHeight / 2);
+
+    let foundActive = false;
+
+    $("#banner, #floral-img, #delivery, #testimony, #team, #flower-gallery, #store-address").each(function(){
+
+      var sectionTop = $(this).offset().top - navHeight - 50;
+      var sectionBottom = sectionTop + $(this).outerHeight();
+      var id = $(this).attr("id");
+
+      if(centerLine >= sectionTop && centerLine < sectionBottom){
+
+        foundActive = true;
+
+        let activeLink = $('.nav-link1[href="#'+id+'"]');
+
+        if(!activeLink.hasClass("active")){
+          $(".nav-link1").removeClass("active");
+          activeLink.addClass("active");
+        }
+      }
+    });
+
+    if(!foundActive){
+      $(".nav-link1").removeClass("active");
+    }
+
+  }, 50); // smooth + efficient
+
+});
+
+    </script>  
+
+    <!--Sticky Navbar + Logo Change-->
+    <script>
+      $(document).ready(function(){
+        let lastScroll = 0;
+        $(window).scroll(function(){
+          let currentScroll = $(this).scrollTop();
+          if(currentScroll > 80){
+          $(".main-navbar")
+           .addClass("sticky")
+           .removeClass("not-sticky");
+          } else {
+          $(".main-navbar")
+           .removeClass("sticky")
+           .addClass("not-sticky");
+         }
+          lastScroll = currentScroll;
+
+      });
+      });
+    </script>
+
+    <!--Floral Scroll Progress Bar-->
+    <script>
+     $(document).ready(function(){
+       $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        var docHeight = $(document).height() - $(window).height();
+        var scrollPercent = (scrollTop / docHeight) * 100;
+
+        $(".floral-progress").css("width", scrollPercent + "%");
+      });
+     });
+    </script>
+
+    <!--flowers appear and fade while the cursor moves-->
+    <script>
+      $(document).ready(function(){
+        $(window).on('resize', function () {
+
+         resizing = true;
+
+         // 🧹 REMOVE all existing flowers immediately
+          $(".flower-trail").remove();
+
+          setTimeout(() => {
+           resizing = false;
+          }, 300);
+
+        });
+
+
+        const flowers = ["🌸","🌺","💮"];
+
+        let lastMove = 0;
+
+       $(document).on("mousemove", function(e){
+
+          // 🚨 STOP during resize
+          if (resizing) return;
+
+         let now = Date.now();
+         if(now - lastMove < 40) return;
+         lastMove = now;
+
+         let randomFlower = flowers[Math.floor(Math.random()*flowers.length)];
+         let flower = $("<span class='flower-trail'>"+randomFlower+"</span>");
+
+         $(".flower-trail-container").append(flower);
+
+         let offsetX = (Math.random() * 14 - 20);
+         let offsetY = (Math.random() * 14 - 20);
+
+          flower.css({
+            left: e.pageX + offsetX,
+            top: e.pageY + offsetY,
+            fontSize: (Math.random()*10 + 8) + "px",
+            transform: `translate(-50%, -50%) rotate(${Math.random()*360}deg)`
+          });
+
+          setTimeout(function(){
+            flower.remove();
+          }, 1800);
+
+        });
+
+      });
+    </script>
+
+    <!--jQuery Random Petal Generator-->
+     <script>
+      document.querySelectorAll(".banner").forEach(card => {
+
+         let resizing = false;
+
+        $(document).ready(function () {
+
+        // resize handler
+         $(window).on('resize', function () {
+
+           resizing = true;
+
+            setTimeout(() => {
+             resizing = false;
+              }, 300);
+
+            });
+
+          // other code...
+
+        });
+
+        const container = card.querySelector(".falling-petals");
+        const petals = [];
+
+        for(let i=0;i<50;i++){
+
+          let petal = document.createElement("span");
+          petal.classList.add("petal");
+
+            // depth
+            if(Math.random() > 0.5){
+              petal.classList.add("front");
+            }else{
+             petal.classList.add("back");
+            }
+
+            // random start
+            petal.x = Math.random() * card.offsetWidth;
+            petal.y = Math.random() * -200;
+
+            // physics
+            petal.speedY = Math.random() * 0.5 + 0.5;   // gravity
+            petal.speedX = Math.random() * 1 - 0.5;     // drift
+            petal.rotation = Math.random() * 360;
+            petal.rotateSpeed = Math.random() * 2 - 1;
+
+          container.appendChild(petal);
+          petals.push(petal);
+        }
+
+        // animation loop
+          function animate(){
+
+            petals.forEach(p => {
+
+              p.y += p.speedY;
+              p.x += Math.sin(p.y * 0.01) + p.speedX;
+              p.rotation += p.rotateSpeed;
+
+              // reset when out
+              if(p.y > card.offsetHeight){
+                p.y = -50;
+                p.x = Math.random() * card.offsetWidth;
+              }
+
+              p.style.transform =
+               `translate(${p.x}px, ${p.y}px) rotate(${p.rotation}deg)`;
+
+              p.style.opacity = 1;
+
+            });
+
+            if (resizing) {
+              requestAnimationFrame(animate);
+              return;
+            }
+
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // 🌸 mouse interaction
+       card.addEventListener("mousemove", e => {
+
+        let rect = card.getBoundingClientRect();
+        let mx = e.clientX - rect.left;
+        let my = e.clientY - rect.top;
+
+        petals.forEach(p => {
+
+          let dx = p.x - mx;
+          let dy = p.y - my;
+          let dist = Math.sqrt(dx*dx + dy*dy);
+
+          if(dist < 80){
+            p.x += dx * 0.05;
+            p.y += dy * 0.05;
+          }
+
+        });
+
+      });
+
+    });
+    </script>
+
+      <!--jQuery Flower System-->
+    <script>
+      $(document).ready(function(){
+
+        let flowers = ["🌸","🌺","🌼","🌷"];
+
+
+        /* MOUSE WIND EFFECT */
+
+       $(".banner").mousemove(function(e){
+
+         let x = e.clientX/50;
+         let y = e.clientY/50;
+
+         $(".petal").css(
+           "transform",
+           "translate("+x+"px,"+y+"px)"
+          );
+
+        });
+
+
+
+        /* PETAL BURST ON CLICK */
+
+       $("body").click(function(e){
+
+          for(let i=0;i<12;i++){
+
+            let burst = $("<span class='petal-burst'>🌸</span>");
+
+            let x = (Math.random()*200-100)+"px";
+            let y = (Math.random()*200-100)+"px";
+
+           burst.css({
+              left:e.pageX,
+              top:e.pageY,
+              "--x":x,
+              "--y":y
+           });
+
+            $("body").append(burst);
+
+              setTimeout(()=>{
+                burst.remove();
+              },1000);
+
+            }
+
+          });
+
+        });
     </script>
     
+    <!--random petals per card-->
+    <script>
+      document.querySelectorAll(".team-card").forEach(card => {
+
+        let resizing = false;
+
+        $(document).ready(function () {
+
+        // resize handler
+         $(window).on('resize', function () {
+
+           resizing = true;
+
+            setTimeout(() => {
+             resizing = false;
+              }, 300);
+
+            });
+
+          // other code...
+
+        });
+
+
+        const container = card.querySelector(".team-petals-3d");
+        const petals = [];
+
+        for(let i=0;i<12;i++){
+
+          let petal = document.createElement("span");
+          petal.classList.add("petals");
+
+            // depth
+            if(Math.random() > 0.5){
+              petal.classList.add("front");
+            }else{
+             petal.classList.add("back");
+            }
+
+            // random start
+            petal.x = Math.random() * card.offsetWidth;
+            petal.y = Math.random() * -150;
+
+            // physics
+            petal.speedY = Math.random() * 0.5 + 0.5;   // gravity
+            petal.speedX = Math.random() * 1 - 0.5;     // drift
+            petal.rotation = Math.random() * 360;
+            petal.rotateSpeed = Math.random() * 2 - 1;
+
+          container.appendChild(petal);
+          petals.push(petal);
+        }
+
+        // animation loop
+          function animate(){
+
+            petals.forEach(p => {
+
+              p.y += p.speedY;
+              p.x += Math.sin(p.y * 0.01) + p.speedX;
+              p.rotation += p.rotateSpeed;
+
+              // reset when out
+              if(p.y > card.offsetHeight){
+                p.y = -50;
+                p.x = Math.random() * card.offsetWidth;
+              }
+
+              p.style.transform =
+               `translate(${p.x}px, ${p.y}px) rotate(${p.rotation}deg)`;
+
+              p.style.opacity = 1;
+
+            });
+
+             if (resizing) {
+    requestAnimationFrame(animate);
+    return;
+  }
+
+
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // 🌸 mouse interaction
+       card.addEventListener("mousemove", e => {
+
+        let rect = card.getBoundingClientRect();
+        let mx = e.clientX - rect.left;
+        let my = e.clientY - rect.top;
+
+        petals.forEach(p => {
+
+          let dx = p.x - mx;
+          let dy = p.y - my;
+          let dist = Math.sqrt(dx*dx + dy*dy);
+
+          if(dist < 80){
+            p.x += dx * 0.05;
+            p.y += dy * 0.05;
+          }
+
+        });
+
+      });
+
+    });
+    </script>
+
+     <!--random petals2 per card-->
+    <script>
+      document.querySelectorAll(".con-client-container").forEach(card => {
+
+        let resizing = false;
+
+        $(document).ready(function () {
+
+        // resize handler
+         $(window).on('resize', function () {
+
+           resizing = true;
+
+            setTimeout(() => {
+             resizing = false;
+              }, 300);
+
+            });
+
+          // other code...
+
+        });
+
+
+        const container = card.querySelector(".counter-petals");
+        const petals = [];
+
+        for(let i=0;i<50;i++){
+
+          let petal = document.createElement("span");
+          petal.classList.add("count-petals");
+
+            // depth
+            if(Math.random() > 0.5){
+              petal.classList.add("front");
+            }else{
+             petal.classList.add("back");
+            }
+
+            // random start
+            petal.x = Math.random() * card.offsetWidth;
+            petal.y = Math.random() * -200;
+
+            // physics
+            petal.speedY = Math.random() * 0.5 + 0.5;   // gravity
+            petal.speedX = Math.random() * 1 - 0.5;     // drift
+            petal.rotation = Math.random() * 360;
+            petal.rotateSpeed = Math.random() * 2 - 1;
+
+          container.appendChild(petal);
+          petals.push(petal);
+        }
+
+        // animation loop
+          function animate(){
+
+            petals.forEach(p => {
+
+              p.y += p.speedY;
+              p.x += Math.sin(p.y * 0.01) + p.speedX;
+              p.rotation += p.rotateSpeed;
+
+              // reset when out
+              if(p.y > card.offsetHeight){
+                p.y = -50;
+                p.x = Math.random() * card.offsetWidth;
+              }
+
+              p.style.transform =
+               `translate(${p.x}px, ${p.y}px) rotate(${p.rotation}deg)`;
+
+              p.style.opacity = 1;
+
+            });
+
+             if (resizing) {
+    requestAnimationFrame(animate);
+    return;
+  }
+
+
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // 🌸 mouse interaction
+       card.addEventListener("mousemove", e => {
+
+        let rect = card.getBoundingClientRect();
+        let mx = e.clientX - rect.left;
+        let my = e.clientY - rect.top;
+
+        petals.forEach(p => {
+
+          let dx = p.x - mx;
+          let dy = p.y - my;
+          let dist = Math.sqrt(dx*dx + dy*dy);
+
+          if(dist < 80){
+            p.x += dx * 0.05;
+            p.y += dy * 0.05;
+          }
+
+        });
+
+      });
+
+    });
+    </script>
+
+     <!--random petals3 per card-->
+    <script>
+      
+      document.querySelectorAll(".testimony-img").forEach(card => {
+
+         let resizing = false;
+
+        $(document).ready(function () {
+
+        // resize handler
+         $(window).on('resize', function () {
+
+           resizing = true;
+
+            setTimeout(() => {
+             resizing = false;
+              }, 300);
+
+            });
+
+          // other code...
+
+        });
+        
+
+        const container = card.querySelector(".testimony-petals");
+        const petals = [];
+
+        for(let i=0;i<50;i++){
+
+          let petal = document.createElement("span");
+          petal.classList.add("testi-petals");
+
+            // depth
+            if(Math.random() > 0.5){
+              petal.classList.add("front");
+            }else{
+             petal.classList.add("back");
+            }
+
+            // random start
+            petal.x = Math.random() * card.offsetWidth;
+            petal.y = Math.random() * -200;
+
+            // physics
+            petal.speedY = Math.random() * 0.5 + 0.5;   // gravity
+            petal.speedX = Math.random() * 1 - 0.5;     // drift
+            petal.rotation = Math.random() * 360;
+            petal.rotateSpeed = Math.random() * 2 - 1;
+
+          container.appendChild(petal);
+          petals.push(petal);
+        }
+
+        // animation loop
+          function animate(){
+
+            petals.forEach(p => {
+
+              p.y += p.speedY;
+              p.x += Math.sin(p.y * 0.01) + p.speedX;
+              p.rotation += p.rotateSpeed;
+
+              // reset when out
+              if(p.y > card.offsetHeight){
+                p.y = -50;
+                p.x = Math.random() * card.offsetWidth;
+              }
+
+              p.style.transform =
+               `translate(${p.x}px, ${p.y}px) rotate(${p.rotation}deg)`;
+
+              p.style.opacity = 1;
+
+            });
+
+             if (resizing) {
+    requestAnimationFrame(animate);
+    return;
+  }
+
+
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // 🌸 mouse interaction
+       card.addEventListener("mousemove", e => {
+
+        let rect = card.getBoundingClientRect();
+        let mx = e.clientX - rect.left;
+        let my = e.clientY - rect.top;
+
+        petals.forEach(p => {
+
+          let dx = p.x - mx;
+          let dy = p.y - my;
+          let dist = Math.sqrt(dx*dx + dy*dy);
+
+          if(dist < 80){
+            p.x += dx * 0.05;
+            p.y += dy * 0.05;
+          }
+
+        });
+
+      });
+
+    });
+    </script>
+
+    <!--jQuery Counter Script-->
+    <script>
+      $(document).ready(function(){
+
+        let counted = false;
+
+         $(window).scroll(function() {
+
+    let oTop = $('.clients').offset().top - window.innerHeight;
+
+    if (!counted && $(window).scrollTop() > oTop) {
+      
+      $('.client-c').each(function () {
+        let $this = $(this);
+        let target = +$this.attr('data-target');
+        let container = $this.siblings('.petals-brusts');
+
+        $({ countNum: 0 }).animate(
+          { countNum: target },
+          {
+            duration: 20000,
+            easing: 'swing',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+
+                // 🌸 Glow effect
+              $this.addClass('glow');
+
+              // 🌸 Petal burst
+              for (let i = 0; i < 10; i++) {
+                let petal = $('<span class="client-petal">🌸</span>');
+
+                 let x = (Math.random() - 0.5) * 200 + 'px';
+                let y = (Math.random() - 0.5) * 200 + 'px';
+
+                petal.css({
+                  '--x': x,
+                  '--y': y
+                });
+                  container.append(petal);
+
+                setTimeout(() => {
+                  petal.remove();
+                }, 1500);
+              }
+            }
+            
+          }
+        );
+
+      });
+
+      counted = true; // run only once
+    }
+
+   });
+
+   });
+    </script>
+
+    <script>
+      $(window).on("scroll", function(){
+
+        $(".gal-flower").each(function(){
+
+          let top = $(this).offset().top;
+          let scroll = $(window).scrollTop();
+          let winH = $(window).height();
+
+          if(scroll + winH - 80 > top){
+            $(this).addClass("show");
+          }
+
+        });
+
+      });
+    </script>
+
+    <script>
+      $(".gal-flower").mouseenter(function(){
+
+        for(let i=0;i<3;i++){ // low count = no lag
+
+          let petal = $("<span class='gal-petal'>🌸</span>");
+
+            let x = (Math.random()*60 - 30) + "px";
+            let y = (Math.random()*-60 - 20) + "px";
+
+            petal.css({
+              left: "50%",
+              top: "50%",
+              "--x": x,
+              "--y": y
+            });
+
+            $(this).append(petal);
+
+            setTimeout(()=>{
+              petal.remove();
+            }, 1500);
+        }
+
+      });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $(window).on('resize', function () {
+
+         setTimeout(function () {
+
+           let docHeight = $(document).height();
+           let winHeight = $(window).height();
+           let scrollTop = $(window).scrollTop();
+
+            // If user is near bottom → snap to bottom again
+           if (scrollTop + winHeight > docHeight - 100) {
+              $(window).scrollTop(docHeight);
+            }
+
+          }, 300);
+
+        });
+      });
+    </script>
+
+
   </body>
 </html>
