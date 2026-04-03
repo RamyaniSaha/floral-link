@@ -103,6 +103,10 @@ html, body{
   color: #aa7152;
 }
 
+.main-navbar.sticky .nav-item1{
+  padding: .6em 0 0;
+}
+
 
 .navbar-toggler{
   align-items: center;
@@ -2260,7 +2264,8 @@ transform:scale(0.8);
     color: black !important;
     align-items: center;
     margin: 0;
-   transition: 0.4s ease-in;
+    transition: 0.4s ease-in;
+    top: 0.28em;
   }
 
   /* Logo CENTER */
@@ -2274,7 +2279,7 @@ transform:scale(0.8);
 
   .navbar-menu{
     position: fixed;
-    top: 4.2em;
+    top: 4.68em;
     left: -100%;
     width: 180px;
     height: auto;
@@ -2444,6 +2449,11 @@ transform:scale(0.8);
  .middle-bttn1{
   width: 36%;
  }
+}
+@media only screen and (max-width: 789.8px){
+  .navbar-toggler {
+    left: 0em;
+  }
 }
 @media only screen and (max-width: 590.8px){
   .nav-container{
