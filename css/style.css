@@ -2460,6 +2460,10 @@ transform:scale(0.8);
     gap: 0 8.6em;
   }
 
+   .main-navbar.sticky .navbar-menu.active{
+    top: 4.44em;
+  }
+
   .nav-logo{
     height: 46px;
   }
@@ -2630,7 +2634,10 @@ transform:scale(0.8);
   .nav-container{
     gap: 0 6.8em;
   }
-   .bttn{
+  .main-navbar.sticky .navbar-menu.active{
+    top: 4.48em;
+  }
+  .bttn{
     width: 56%;
     font-size: 12px;
   }
@@ -2699,6 +2706,9 @@ transform:scale(0.8);
  .nav-container{
     gap: 0 5.6em;
   }
+  .main-navbar.sticky .navbar-menu.active{
+    top: 4.1em;
+  }
   .nav-logo{
     height: 40px;
   }
@@ -2706,6 +2716,9 @@ transform:scale(0.8);
 @media only screen and (max-width:398.8px){
    .nav-container{
     gap: 0 5em;
+  }
+  .main-navbar.sticky .navbar-menu.active{
+    top: 3.7em;
   }
   .nav-logo{
     height: 34px;
