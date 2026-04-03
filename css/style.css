@@ -2279,7 +2279,7 @@ transform:scale(0.8);
 
   .navbar-menu{
     position: fixed;
-    top: 4.68em;
+    top: 4.8em;
     left: -100%;
     width: 180px;
     height: auto;
@@ -2299,6 +2299,7 @@ transform:scale(0.8);
 
   .main-navbar.sticky .navbar-menu.active{
     backdrop-filter: blur(20px);
+    top: 4.68em;
   }
 
 
