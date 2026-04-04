@@ -35,7 +35,7 @@ html, body{
   z-index: 999994;
   background:linear-gradient( 120deg ,#ffffffcf,#aa715256);
   backdrop-filter:blur(10px);
-  animation: sticky 0.8s ease;
+  animation: sticky 0.6s ease;
 }
 
 .main-navbar.not-sticky {
